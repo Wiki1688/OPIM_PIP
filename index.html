@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en-SG">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pink in Public · The PIP AI Growth Engine · OPIM639 Group 01</title>
+  <meta name="description" content="OPIM639 Group 01: Pink in Public — the PIP AI Growth Engine. Built like Airbnb, funded like Google, run like Amazon.">
+  <meta name="theme-color" content="#D6007A">
+  <meta property="og:title" content="Pink in Public: The PIP AI Growth Engine">
+  <meta property="og:description" content="OPIM639 Group 01 · Strategic business plan with AI execution steps">
+  <meta property="og:image" content="assets/img/hero-title.webp">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23D6007A'/%3E%3Cpath d='M22 48V16h13a10 10 0 0 1 0 20h-6' fill='none' stroke='%23fff' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/fonts/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/roboto-slab-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/img/hero-title.webp" as="image">
+  <link rel="stylesheet" href="assets/css/deck.css">
+  <link rel="stylesheet" href="assets/css/slides.css">
+</head>
+<body>
+  <noscript>
+    <div style="background:#FDF3F8;color:#2B2B2B;font:20px/1.5 system-ui,sans-serif;padding:48px;max-width:900px">
+      <h1>This deck needs JavaScript.</h1>
+      <p>Open <code>assets/original/</code> for the original slide images, or the PDF fallback described in the README.</p>
+    </div>
+  </noscript>
+
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="mode-pill" id="mode-pill" aria-live="polite"></div>
+  <div class="mini-timer" id="mini-timer" title="Elapsed (T to hide)"></div>
+
+  <main class="viewport" id="viewport" aria-label="Presentation" aria-live="polite">
+    <div class="stage" id="stage"></div>
+    <div class="read-list" aria-label="All slides, reading mode"></div>
+  </main>
+
+  <nav class="chrome" id="chrome" aria-label="Slide controls">
+    <button id="btn-prev" class="nav hide-reading" aria-label="Previous (←)" title="Previous (← / PgUp)"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></span></button>
+    <span class="count hide-reading" id="count" role="button" tabindex="0" aria-label="Slide number. Click for all slides" title="All slides (O)">1 / 22</span>
+    <button id="btn-next" class="nav next hide-reading" aria-label="Next (→)" title="Next (→ / Space / PgDn)"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></span></button>
+    <div class="segs hide-reading" id="segs" aria-label="Jump to a section"></div>
+    <span class="div hide-reading"></span>
+    <button id="btn-all" class="hide-reading" title="Show all builds on this slide (A)"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 19l9-7-9-7v14z"/><path d="M2 19l9-7-9-7v14z"/></svg></span><span class="lbl-sm">Show all</span></button>
+    <button id="btn-express" class="hide-reading" aria-pressed="false" title="Quick mode: every slide arrives fully built, one click per slide (X)"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg></span><span class="lbl-sm">Quick mode</span></button>
+    <button id="btn-overview" title="All slides (O)"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg></span><span class="lbl-sm">Slides</span></button>
+    <button id="btn-reading" aria-pressed="false" title="Reading mode: all slides on one scrolling page (R)"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg></span><span class="lbl-sm">Read</span></button>
+    <button id="btn-orig" class="hide-reading" aria-pressed="false" title="Original PPTX view of this slide (V)"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.09-3.09a2 2 0 0 0-2.82 0L6 21"/></svg></span><span class="lbl-sm">Original</span></button>
+    <button id="btn-laser" class="hide-reading" aria-pressed="false" title="Laser pointer (L)"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="22" x2="18" y1="12" y2="12"/><line x1="6" x2="2" y1="12" y2="12"/><line x1="12" x2="12" y1="6" y2="2"/><line x1="12" x2="12" y1="22" y2="18"/></svg></span></button>
+    <button id="btn-presenter" class="hide-reading" title="Presenter view: notes, timer, next slide (P)"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h20"/><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/><path d="m7 21 5-5 5 5"/></svg></span><span class="lbl-sm">Presenter</span></button>
+    <button id="btn-full" title="Full screen (F)"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg></span><span class="lbl-sm">Full screen</span></button>
+    <button id="btn-help" title="Keyboard shortcuts (?)" aria-label="Keyboard shortcuts"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg></span></button>
+  </nav>
+
+  <div class="overlay" id="overview" role="dialog" aria-modal="true" aria-label="All slides" aria-hidden="true">
+    <div class="ov-head"><h2>All slides <span class="hint">Click a slide to jump · Esc to close</span></h2><button class="btn" data-close>Close (Esc)</button></div>
+    <div class="ov-body"></div>
+  </div>
+
+  <div class="overlay help" id="help" role="dialog" aria-modal="true" aria-label="Keyboard shortcuts" aria-hidden="true">
+    <div class="box">
+      <h3>Presenting this deck</h3>
+      <table>
+        <tr><td><kbd>→</kbd> <kbd>Space</kbd> <kbd>PgDn</kbd> <kbd>Enter</kbd></td><td>Next build, then next slide (clickers work)</td></tr>
+        <tr><td><kbd>←</kbd> <kbd>PgUp</kbd></td><td>Back</td></tr>
+        <tr><td><kbd>A</kbd></td><td><b>Show all</b>: reveal every remaining build on this slide</td></tr>
+        <tr><td><kbd>X</kbd></td><td><b>Quick mode</b>: every slide arrives fully built (one click per slide) — use when time is short</td></tr>
+        <tr><td><kbd>O</kbd> or click the counter</td><td>All slides (jump anywhere)</td></tr>
+        <tr><td><kbd>1</kbd><kbd>2</kbd> then <kbd>Enter</kbd></td><td>Go to slide 12</td></tr>
+        <tr><td><kbd>Home</kbd> <kbd>End</kbd></td><td>First · last slide</td></tr>
+        <tr><td><kbd>F</kbd></td><td>Full screen</td></tr>
+        <tr><td><kbd>P</kbd></td><td>Presenter view (notes, timer, next slide) in a second window, kept in sync</td></tr>
+        <tr><td><kbd>K</kbd></td><td>Play / pause the video on slide 5 (the first “next” on slide 5 also starts it)</td></tr>
+        <tr><td><kbd>V</kbd></td><td>Original PPTX view of the current slide</td></tr>
+        <tr><td><kbd>L</kbd></td><td>Laser pointer</td></tr>
+        <tr><td><kbd>B</kbd> or <kbd>.</kbd></td><td>Black screen</td></tr>
+        <tr><td><kbd>T</kbd></td><td>Elapsed-time clock</td></tr>
+        <tr><td><kbd>R</kbd></td><td>Reading mode: all slides on one scrolling page (phones open in this mode)</td></tr>
+        <tr><td><kbd>Esc</kbd></td><td>Close panels, laser, black screen</td></tr>
+      </table>
+      <p style="margin:16px 0 0"><button class="btn pink" data-close>Got it</button></p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+  <div class="laser" id="laser" aria-hidden="true"></div>
+  <div class="blackout" id="blackout" aria-hidden="true"></div>
+  <div class="wipe" id="wipe" aria-hidden="true"></div>
+
+  <script src="assets/js/icons.js"></script>
+  <script src="content/orig-titles.js"></script>
+  <script src="content/_base.js"></script>
+  <script src="content/s01-06.js"></script>
+  <script src="content/s07-15.js"></script>
+  <script src="content/s16-22.js"></script>
+  <script src="assets/js/deck.js"></script>
+</body>
+</html>

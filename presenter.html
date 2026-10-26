@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en-SG">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Presenter view · PIP AI Growth Engine</title>
+  <link rel="stylesheet" href="assets/css/deck.css">
+  <style>
+    html, body { background: #120710; color: #fff; overflow: auto; height: auto; min-height: 100%; }
+    body { font-family: var(--sans); }
+    .pv-top { display: flex; align-items: center; gap: 18px; padding: 12px 20px; background: #1d0b17; border-bottom: 1px solid #3a1730; flex-wrap: wrap; }
+    .pv-top h1 { margin: 0; font-size: 16px; font-weight: 800; letter-spacing: .04em; color: var(--rose); }
+    .clock { font-variant-numeric: tabular-nums; font-weight: 800; }
+    .big-t { font-size: 40px; line-height: 1; }
+    .t-lbl { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; opacity: .65; display: block; margin-bottom: 4px; }
+    .tbox { padding: 6px 14px; border-radius: 12px; background: #2a1022; }
+    .tbox.warn { background: #6b4a00; } .tbox.over { background: #7a0b3b; }
+    .pv-btn { background: #2f1328; border: 1px solid #4a2240; color: #fff; padding: 9px 14px; border-radius: 10px; cursor: pointer; font-weight: 700; font-size: 14px; }
+    .pv-btn:hover { background: #45193a; }
+    .pv-btn.pink { background: var(--pink); border-color: var(--pink); }
+    .pv-btn[aria-pressed="true"] { background: var(--pink); }
+    .grow { flex: 1; }
+    .pv-main { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 18px; padding: 18px 20px 90px; }
+    .frame { position: relative; width: 100%; aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; background: #000; box-shadow: 0 16px 40px -18px #000; outline: 3px solid var(--pink); }
+    .frame.next { outline-color: #4a2240; }
+    .frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; pointer-events: none; }
+    .cap { display: flex; justify-content: space-between; align-items: baseline; margin: 10px 2px 6px; font-size: 14px; opacity: .85; gap: 10px; }
+    .cap b { font-size: 18px; opacity: 1; color: #fff; }
+    .chipx { display: inline-block; padding: 3px 10px; border-radius: 999px; background: #3a1730; font-size: 12px; font-weight: 800; letter-spacing: .06em; margin-left: 6px; }
+    .chipx.spk { background: var(--teal); }
+    .notes { margin-top: 14px; padding: 18px 20px; border-radius: 14px; background: #fff; color: #2b2b2b; font-size: 21px; line-height: 1.5; max-height: calc(100vh - 470px); min-height: 160px; overflow: auto; }
+    .notes .say { font-weight: 500; }
+    .notes .lbl { display: inline-block; font-size: 12px; font-weight: 800; letter-spacing: .14em; color: var(--pink); margin-right: 6px; }
+    .notes .click { display: inline-block; padding: 0 8px; margin: 0 3px; border-radius: 6px; background: var(--pink); color: #fff; font-size: 13px; font-weight: 800; letter-spacing: .08em; vertical-align: 2px; }
+    .notes .click.done { background: #c9bfc4; }
+    .notes .cue { margin-top: 14px; padding: 12px 14px; border-radius: 10px; background: #FFF2F8; font-size: 16px; line-height: 1.45; color: #5a4a53; }
+    .notes ul { margin: 6px 0 0; padding-left: 22px; }
+    .notes .none { font-size: 14px; color: #8a7d84; margin-bottom: 6px; }
+    .steps-ind { display: flex; gap: 6px; align-items: center; }
+    .steps-ind i { width: 12px; height: 12px; border-radius: 50%; background: #4a2240; display: inline-block; }
+    .steps-ind i.on { background: var(--pink); }
+    .pv-bar { position: fixed; left: 0; right: 0; bottom: 0; display: flex; gap: 10px; align-items: center; justify-content: center; padding: 12px; background: rgba(20, 7, 16, .95); border-top: 1px solid #3a1730; flex-wrap: wrap; }
+    .pv-bar .pv-btn { font-size: 16px; padding: 12px 20px; }
+    .link-state { font-size: 12px; opacity: .7; }
+    .link-state.on { color: #7CF0B0; opacity: 1; }
+    input.tgt { width: 52px; background: #2a1022; color: #fff; border: 1px solid #4a2240; border-radius: 8px; padding: 6px; font: 700 15px var(--sans); text-align: center; }
+    @media (max-width: 1000px) { .pv-main { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="pv-top">
+    <h1>PRESENTER VIEW · PIP AI GROWTH ENGINE</h1>
+    <div class="tbox" id="tb-total"><span class="t-lbl">Elapsed</span><span class="clock big-t" id="t-total">0:00</span></div>
+    <div class="tbox" id="tb-slide"><span class="t-lbl">This slide</span><span class="clock big-t" id="t-slide">0:00</span></div>
+    <div><span class="t-lbl">Target (min)</span><input class="tgt" id="tgt" type="number" min="1" max="60" value="10"> <span id="t-left" class="clock" style="margin-left:6px"></span></div>
+    <button class="pv-btn pink" id="t-start">Start timer</button>
+    <button class="pv-btn" id="t-reset">Reset</button>
+    <div class="grow"></div>
+    <div><span class="t-lbl">Clock</span><span class="clock" id="t-clock" style="font-size:22px"></span></div>
+    <span class="link-state" id="link">Not linked to the audience window</span>
+  </div>
+
+  <div class="pv-main">
+    <section>
+      <div class="cap"><span>NOW · <b id="cur-title"></b><span class="chipx spk" id="cur-spk" hidden></span></span><span class="steps-ind" id="steps"></span></div>
+      <div class="frame"><iframe id="f-cur" title="Current slide" src="index.html?embed=1" tabindex="-1"></iframe></div>
+    </section>
+    <section>
+      <div class="cap"><span>NEXT · <b id="next-title"></b></span><span id="count" class="clock"></span></div>
+      <div class="frame next"><iframe id="f-next" title="Next slide" src="index.html?embed=1&amp;static=1" tabindex="-1"></iframe></div>
+      <div class="notes" id="notes" aria-live="polite"></div>
+    </section>
+  </div>
+
+  <div class="pv-bar">
+    <button class="pv-btn" id="b-prev">← Back</button>
+    <button class="pv-btn pink" id="b-next">Next →</button>
+    <button class="pv-btn" id="b-all" title="A">Show all on this slide</button>
+    <button class="pv-btn" id="b-express" aria-pressed="false" title="X">Quick mode</button>
+    <button class="pv-btn" id="b-video" title="K">Play / pause video</button>
+    <button class="pv-btn" id="b-black" title="B">Black screen</button>
+    <button class="pv-btn" id="b-open">Open audience window</button>
+  </div>
+
+  <script src="assets/js/icons.js"></script>
+  <script src="content/_base.js"></script>
+  <script src="content/s01-06.js"></script>
+  <script src="content/s07-15.js"></script>
+  <script src="content/s16-22.js"></script>
+  <script src="assets/js/presenter.js"></script>
+</body>
+</html>

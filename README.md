@@ -7,6 +7,7 @@ OPIM639 Group 01 project presentation (Wee Khee, Rizwan, Sanesh, Kartik, Josephi
 | --- | --- |
 | `/` (`index.html`) | The audience deck: 22 slides, animated builds, video, charts |
 | `/presenter` (`presenter.html`) | Presenter view: speaker notes, timers, current + next slide, synced with the deck |
+| `/notes` (`notes.html`) | Phone speaker notes: the 9-minute script by speaker, big text, timer, Q&A answers |
 
 No build step and no dependencies: plain HTML, CSS and JavaScript. Fonts and icons are bundled, so the
 deck does not depend on outside services once loaded.

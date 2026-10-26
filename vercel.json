@@ -2,8 +2,41 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "headers": [
-    { "source": "/presenter", "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }] },
-    { "source": "/assets/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" }] },
-    { "source": "/assets/video/(.*)", "headers": [{ "key": "Accept-Ranges", "value": "bytes" }] }
+    {
+      "source": "/presenter",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
+    },
+    {
+      "source": "/notes",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/assets/video/(.*)",
+      "headers": [
+        {
+          "key": "Accept-Ranges",
+          "value": "bytes"
+        }
+      ]
+    }
   ]
 }

@@ -4,10 +4,10 @@
 
   /* ---------------------------------------------------------------- 1 */
   S.push({
-    id: "title", section: "context", cls: "s-hero", short: "Title",
+    id: "title", section: "context", cls: "s-hero", short: "Introduction",
     title: "Pink in Public: The PIP AI Growth Engine",
-    speaker: "",
-    notes: "",
+    speaker: "Wee Khee",
+    notes: "Wee Khee · 0:00–0:12. SAY: Good afternoon, Prof Lim and fellow MBAI Leaders! We are Group 01 and we are honoured to be the 1st group to kick start our OPIM Group presentation the Strategic Business Plan for our company of choice - Pink in Public. We call this the PIP AI Growth Engine! [CLICK]",
     points: ["Pink in Public: The PIP AI Growth Engine.", "OPIM639 · Group 01 · Strategic business plan with AI execution steps.", "Team: Wee Khee, Rizwan, Sanesh, Kartik, Josephine."],
     html: `
       <img class="hero" src="assets/img/hero-title.webp" alt="Neon-lit row of Pink in Public smart vending machines with screens">
@@ -31,8 +31,8 @@
   S.push({
     id: "network", section: "context", short: "Singapore's 1st smart retail network",
     title: "Singapore’s 1st Smart Retail Network",
-    speaker: "",
-    notes: "",
+    speaker: "Wee Khee",
+    notes: "Wee Khee · 0:12–0:40. SAY: Pink in Public is Singapore’s first smart retail network: mini-shops with **no shopkeeper**, each with a screen on top. Four machine types, seven SmartMarts, and **five sides** on one platform. Shoppers buy in their own lobby. Advertisers rent the screen. Suppliers consign the stock. Landlords host the machine rent-free for a 10% share. Co-owners fund it. / It is a multi-sided marketplace — the Chapter 8 platform, standing in a lobby. [CLICK] {{Point at the five icons as you name them.}}",
     points: ["Singapore’s 1st smart retail network: a multi-side platform of smart vending machines, each with a screen on top.", "Four machine types; 7 SmartMarts launched.", "Each machine has a “till” that records every purchase, product, price and minute.", "Five sides: shoppers, advertisers, suppliers, landlords, co-owners."],
     html: `
       <div class="abs wordmark" style="left:70px;top:48px" data-a="left" data-d="0"><b>PINK IN</b><i>PUBLIC</i></div>
@@ -71,8 +71,8 @@
   S.push({
     id: "loop", section: "context", short: "Growth loop",
     title: "Pink in Public Growth Loop",
-    speaker: "",
-    notes: "",
+    speaker: "Wee Khee",
+    notes: "Wee Khee · 0:40–1:02. SAY: It grows as a loop. Four hundred co-owners pay S$13,000 a machine for S$300 a month. That funds **300-plus sites**, which bring shoppers, which attract **200 advertisers** and **27 suppliers** — whose revenue attracts more co-owners. / Revenue fuels growth. But only if every turn of the loop **pays**. [CLICK] {{Trace the ring clockwise, 1 to 5.}}",
     points: ["Growth loop: more co-owners → more locations → more shoppers → more advertisers & suppliers → more revenue → more co-owners.", "400+ co-owners pay S$13,000 per machine for S$300 a month; 300+ landlord sites; 200 advertisers; 27 suppliers."],
     html: `
       <svg class="loop-svg" viewBox="0 0 1920 1080" aria-hidden="true">
@@ -136,8 +136,8 @@
   S.push({
     id: "processes", section: "context", short: "6 core processes (current)",
     title: "Pink in Public: 6 Core Processes (Current)",
-    speaker: "",
-    notes: "",
+    speaker: "Wee Khee",
+    notes: "Wee Khee · 1:02–1:20. SAY: Today that loop runs by hand. Of six core processes, **five are manual**: screens sold by bespoke pitch, refills in about three days, sites signed in six to eight weeks, results reported by screenshot, partners paid twice a year. Only ad scheduling is automated. [CLICK]",
     points: ["Six core processes today; five are manual, only advert scheduling is automated.", "Only 60% of screen-months sold; refill ~3 days after an alert; signing a site takes 6–8 weeks."],
     html: `
       ${HEAD("PIP today · how the work is done now", 4, `Pink in Public: <span class="hl">6 Core Processes</span> (Current)`)}
@@ -156,8 +156,8 @@
   S.push({
     id: "problem", section: "context", short: "Problem: the 3 pillars",
     title: "Problem: Scaling, Attracting, Sustaining the 3 Pillars",
-    speaker: "",
-    notes: "Ferlyn’s clip (0:18) is on this slide. Press → (or click the play button, or K) to play it; press → again to move on. The clip pauses when you leave the slide.",
+    speaker: "Wee Khee",
+    notes: "Wee Khee · 1:20–2:00. SAY: Here is the founder, Ferlyn. [CLICK] {{The click PLAYS the clip (0:18). Step aside, don’t talk over it. When it ends:}} Her three pillars are under strain. Advertisers: only **60%** of screen-months sold — so a screen earns S$210 against the S$300 promised, a coverage ratio of **0.70**. Suppliers: **27** of the hundred she wants. Landlords: **17%** of sites flagged to move. / Growing the fleet without proof only grows that gap. [CLICK] CUE: Ferlyn’s clip (0:18) is on this slide. Press → (or click the play button, or K) to play it; press → again to move on. The clip pauses when you leave the slide.",
     points: ["Advertisers: 60% of screen-months sold; a screen earns S$210 against the S$300 promised (coverage 0.70).", "Suppliers: 27 of the 100 Ferlyn wants.", "Landlords: 17% of sites flagged for relocation.", "Coverage ratio = what a screen earns ÷ what it promises."],
     html: `
       ${HEAD("PIP today · the problem", 5, `Problem: Scaling, Attracting, <span class="hl">Sustaining the 3 Pillars</span>`, "sm")}
@@ -205,8 +205,8 @@
   S.push({
     id: "proposal", section: "proposal", short: "Our proposal",
     title: "Our Proposal: The PIP AI Growth Engine",
-    speaker: "",
-    notes: "",
+    speaker: "Wee Khee",
+    notes: "Wee Khee · 2:00–2:30. SAY: Our answer is the PIP AI Growth Engine: **proof from the till**. Built like **Airbnb** for landlords and co-owners. Funded like **Google** for advertisers. Run like **Amazon** for suppliers. One AI model keeps all three promises with four jobs: **Match, Plan, Prove, Learn**. The model writes the list; a named person signs it. / Rizwan starts where every machine starts — the site. {{Hand the clicker to Rizwan.}}",
     points: ["Proof from the Till: built like Airbnb (landlords, co-owners), funded like Google (advertisers), run like Amazon (suppliers).", "One AI model keeps all 3 promises and does 4 jobs: Match, Plan, Prove, Learn."],
     html: `
       ${HEAD("Our proposal", 6, `Our Proposal: <span class="hl">The PIP AI Growth Engine</span>`)}

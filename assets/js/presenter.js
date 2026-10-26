@@ -54,6 +54,9 @@
       let k = 0;
       say = esc(say)
         .replace(/SAY:/, '<span class="lbl">SAY</span>')
+        .replace(/\{\{(.+?)\}\}/g, '<span class="dir">$1</span>')
+        .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
+        .replace(/ \/ /g, ' <span class="pause">/</span> ')
         .replace(/\[CLICK\]/g, () => { k++; return `<span class="click${k <= st.step ? " done" : ""}">CLICK ${k}</span>`; });
       html = `<div class="say">${say}</div>`;
       if (cue) html += `<div class="cue"><span class="lbl">CUE</span>${esc(cue)}</div>`;

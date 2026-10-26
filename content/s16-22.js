@@ -32,7 +32,7 @@
     id: "benefit", section: "value", cls: "bg-paper sec-value s16", short: "Size of the benefit",
     title: "Size of the Benefit: 3× the revenue by 2028, S$11.2M by 2031 in line with industry, further elevated by AI adoption",
     speaker: "Josephine",
-    notes: "",
+    notes: "Josephine · 7:00–7:30. SAY: {{Let the bars grow, then speak. Point at each number.}} Here is what it is worth. The grey bars are Ferlyn’s own targets, reproduced within 4%. The pink bars are our plan. Revenue goes from S$1.8 million today to **S$5.4 million in 2028** — three times — and **S$11.2 million by 2031**: S$4.5 million a year above her own plan. / And the number co-owners care about: coverage of their S$300 promise rises from 0.70 to **above 1.0 in 2030** — the screens finally pay what was promised. [CLICK]",
     points: ["Revenue S$1.8M (2026) → S$5.4M in 2028, three times 2026; business as usual S$4.0M.", "S$11.2M in 2031: S$4.5M a year above Ferlyn’s own plan (S$6.7M).", "Coverage of the S$300 promise 0.70 → 1.17 (0.88 in 2028, 0.99 in 2029).", "Coverage link: in 2028 every 0.01 of coverage ≈ S$40,000 of advertising; at 0.88 the top-up falls from S$1.2M a year to S$0.5M.", "Business as usual reproduces Ferlyn’s targets within 4%."],
     html: `
       ${HEAD("Benefit · Josephine", 16, `Size of the Benefit: <span class="hl">3× the revenue by 2028, S$11.2M by 2031</span> in line with industry, further elevated by AI adoption`, "xs")}
@@ -96,7 +96,7 @@
     id: "cost", section: "value", cls: "bg-paper sec-value s17", short: "Cost, payback, scenarios",
     title: "What it costs; When it pays back; What if we are wrong",
     speaker: "Josephine",
-    notes: "",
+    notes: "Josephine · 7:30–8:00. SAY: The cost: **S$4.25 million** over five years — and the biggest item is people, not technology. 2027 is the investment year: minus S$0.23 million. **Payback comes in 2028**, and S$7.2 million of profit by 2031. / And if we are wrong? Even our late-proof case still makes **S$1.5 million in 2031**. We run 90-day pilots and only scale what works. Wee Khee: how we roll it out. {{Gesture across the three scenario cards. Pass the clicker.}}",
     points: ["Cost S$4.25M over 2027–31: S$0.49M fixed build, S$3.76M variable.", "2027 is the investment year: −S$0.23M on a S$597k budget.", "Payback 2028: cumulative profit +S$0.52M in 2028, S$7.2M by 2031.", "Scenarios for 2031: late proof S$1.5M (coverage 0.93) · base S$3.2M (1.17) · programmatic demand S$4.9M (1.42).", "Quote: “We run 90-day pilots. We test, measure, and only scale what works.”"],
     html: `
       ${HEAD("Cost & payback · Josephine", 17, `What it costs; <span class="hl">When it pays back;</span> What if we are wrong`, "sm")}
@@ -132,8 +132,8 @@
   S.push({
     id: "ai-processes", section: "exec", cls: "bg-paper sec-exec s18", short: "AI-enhanced processes",
     title: "Pink in Public: AI-Enhanced Processes",
-    speaker: "",
-    notes: "",
+    speaker: "Wee Khee",
+    notes: "Wee Khee · 8:00–8:15. SAY: {{Slow down: the last minute is what Prof Lim remembers.}} Remember the five manual processes? Here they are again — each now run by Match, Plan, Prove or Learn. And in **every one**, the AI writes the list and a **person signs it**. [CLICK]",
     points: ["The same six processes as slide 4, now run by the engine’s four jobs (Match, Plan, Prove, Learn).", "In every process the AI writes the list and a named person signs it."],
     html: `
       ${HEAD("From manual to AI-enhanced", 18, `Pink in Public: <span class="hl">AI-Enhanced Processes</span>`)}
@@ -164,8 +164,8 @@
   S.push({
     id: "execution", section: "exec", cls: "bg-paper sec-exec s19", short: "Execution roadmap",
     title: "Execution: 90-Day Pilot; 3 Phases to 2,500 Machines; Rules 1st, Learned AI Models in 2028",
-    speaker: "",
-    notes: "",
+    speaker: "Wee Khee",
+    notes: "Wee Khee · 8:15–8:35. SAY: We start small. A **90-day pilot** in Q1 2027, inside the 2027 budget, with clear go / no-go gates that Ferlyn decides. Then rules first in 2027, learned models in 2028, and **2,500 machines** by 2031. [CLICK]",
     points: ["Q1 2027 pilot, 90 days, 670 machines, inside the 2027 budget.", "2027 foundation, rules first: 1,000 machines, S$597k (S$325k build + S$272k running).", "2028 scale and learn: 1,500 machines, S$611k, payback year.", "2029–31 optimise and expand: 2,500 machines, S$0.8M → S$1.3M a year.", "Gates after 90 days and four decisions for Ferlyn."],
     html: `
       ${HEAD("Execution", 19, `Execution: <span class="hl">90-Day Pilot</span>; 3 Phases to 2,500 Machines; Rules 1<sup>st</sup>, Learned AI Models in 2028`, "xs")}
@@ -196,8 +196,8 @@
   S.push({
     id: "close", section: "close", cls: "bg-paper s20", short: "Built like Airbnb · Funded like Google · Run like Amazon",
     title: "Built like Airbnb. Funded like Google. Run like Amazon",
-    speaker: "",
-    notes: "",
+    speaker: "Wee Khee",
+    notes: "Wee Khee · 8:35–8:52. SAY: So: partners own it. Screens pay for it. Every purchase teaches it what to stock, what to show and where to grow. / PIP does not only need more screens. **It needs one brain.** [CLICK]",
     points: ["Partners own it. Screens pay for it. Every purchase teaches it what to stock, what to show and where to grow.", "PIP today: 670 machines, 500 screens, 300+ sites, S$1.8M a year.", "One brain, four jobs: Match, Plan, Prove, Learn.", "Worth: S$5.4M revenue in 2028; coverage 0.70 → 1.17; payback 2028.", "Close: PIP does not only need more screens. It needs the One Brain."],
     html: `
       ${HEAD("The pitch in one line", 20, `Built like Airbnb <span class="hl">·</span> Funded like Google <span class="hl">·</span> Run like Amazon`)}
@@ -258,8 +258,8 @@
   S.push({
     id: "course-map", section: "close", cls: "bg-paper s21", short: "One Brain: course map",
     title: "PIP AI Growth Engine – An AI Innovation to Boost PIP Revenue, Enhance Service level & Reduce Costs!",
-    speaker: "",
-    notes: "",
+    speaker: "Wee Khee",
+    notes: "Wee Khee · 8:52–8:58. SAY: And that brain is Chapter 3 — analytics and AI — joining every topic of this course. [CLICK]",
     points: ["Ch. 3 · Session 3 “One Brain” Analytics & AI sits at the centre of every course topic.", "Service level: coverage 0.70 → 1.17. Revenue +S$4.5M (2031 impact). Cost −18% (restock & supply-chain optimisation)."],
     html: `
       <header class="head" style="text-align:center">
@@ -301,8 +301,8 @@
   S.push({
     id: "qa", section: "close", cls: "s-hero", short: "Q & A",
     title: "Q & A",
-    speaker: "",
-    notes: "",
+    speaker: "Wee Khee",
+    notes: "Wee Khee · 8:58–9:00. SAY: Thank you. We welcome your questions. {{All five step forward. Wee Khee repeats each question in one line, then names the owner.}}",
     points: ["Take questions; route each one to the owner of that engine or of the numbers."],
     html: `
       <img class="hero" src="assets/img/hero-qa.webp" alt="Three neon-lit PIP smart vending machines in a network of light">

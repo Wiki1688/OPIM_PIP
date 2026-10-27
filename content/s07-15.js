@@ -13,13 +13,13 @@
     id: "landlord-intro", section: "landlord", cls: "bg-paper sec-landlord s7", short: "Landlord Engine: Build like Airbnb",
     title: "Landlord Engine: Build like Airbnb",
     speaker: "Rizwan", budget: 40,
-    notes: "Rizwan · 2:30–3:00. SAY: {{Airbnb card is already on screen. Click first, then speak.}} Airbnb owns no rooms. Yet hosts list anyway. / Why? Because Airbnb brings the guests — and shows each host what their room earns. [CLICK] Pink in Public is built the same way: landlords give the space, co-owners fund the machines, PIP brings the shoppers. But today a new site comes by **referral and chance**, signing takes **six to eight weeks**, and **17%** of our sites sit in the wrong place. [CLICK] We fix that with two words. **Match.** / And **prove.** [CLICK] {{“Prove” lands one second after “Match”.}} CUE: the Airbnb card is on screen when the slide opens. Click 1: the Pink in Public card, then the three ‘today’ chips follow on their own. Click 2: ‘Match.’ appears; ‘Prove.’ follows one second later — say ‘And prove’ as it lands. Pause after ‘Why?’ and after ‘Match.’ Next slide: Match.",
+    notes: "Rizwan · 2:30–3:00. SAY: {{Airbnb card is already on screen. Click first, then speak.}} Airbnb owns no rooms. Yet hosts list anyway. / Why? Because Airbnb brings the guests — and shows each host what their room earns. [CLICK] Pink in Public is built the same way: landlords give the space, co-owners fund the machines, PIP brings the shoppers. But today a new site comes by **referral and chance**, signing takes **six to eight weeks**, and **17%** of our sites are poor sites, flagged for possible relocation. [CLICK] We fix that with two words. **Match.** / And **prove.** [CLICK] {{“Prove” lands one second after “Match”.}} CUE: the Airbnb card is on screen when the slide opens. Click 1: the Pink in Public card, then the three ‘today’ chips follow on their own. Click 2: ‘Match.’ appears; ‘Prove.’ follows one second later — say ‘And prove’ as it lands. Pause after ‘Why?’ and after ‘Match.’ Next slide: Match.",
     html: `
       ${HEAD("Landlord Engine · Rizwan", 7, `Landlord Engine: <span class="hl">Build like Airbnb</span>`)}
       <div class="e-lead" data-a="up" data-d="200">Landlords give the space, co-owners the machines;<br>the AI shows what each site earns.</div>
       <div class="analogy">
         <div class="card" data-a="left" data-d="350">
-          <h3 class="alt">Airbnb</h3>
+          <h3 class="alt"><img class="brand-logo" src="assets/img/logo-airbnb.svg" alt="Airbnb"></h3>
           <p>Owns no rooms.<br>Hosts list anyway.</p>
           <div class="hr"></div>
           <p>Why? Airbnb brings the guests…<br>…and shows each host what their room earns.</p>
@@ -39,7 +39,7 @@
           <div class="today">
             <div class="t" data-step="1" data-a="up" data-d="700"><div class="tt">${I("user-plus")}<span>By referral<br>and chance</span></div><div class="ts">(how a new site is found today)</div></div>
             <div class="t" data-step="1" data-a="up" data-d="1000"><div class="tt">${I("calendar-days")}<span>6–8 weeks<br>to sign</span></div><div class="ts">(with a bespoke deck for every landlord)</div></div>
-            <div class="t" data-step="1" data-a="up" data-d="1300"><div class="tt">${I("map-pin")}<span>17%<br>in the wrong place</span></div><div class="ts">(sites flagged to move)</div></div>
+            <div class="t" data-step="1" data-a="up" data-d="1300"><div class="tt">${I("map-pin")}<span>17%<br>in poor sites</span></div><div class="ts">(sites flagged for possible relocation)</div></div>
           </div>
         </div>
         <div class="sep"></div>
@@ -77,7 +77,7 @@
         <div class="meter"><div class="lab">Who else sells nearby (lower is better)</div><div class="val">Low</div><div class="bar"><i style="--w:50%;background:linear-gradient(90deg,#C98A00,#E3A935)"></i></div></div>
         <div class="proposal" data-step="1" data-a="up" data-d="150">${I("file-text")}<div><b>Two-page proposal, ready in 1 day:</b><br>your 10% share, in S$ per month.</div></div>
       </div>
-      <div class="tiles-row tiles" style="left:50px;right:50px;top:808px;grid-template-columns:repeat(4,1fr);--accent:#B27A00;--accent-soft:#FBF1DC">
+      <div class="tiles-row tiles" style="left:50px;right:50px;top:836px;grid-template-columns:repeat(4,1fr);--accent:#B27A00;--accent-soft:#FBF1DC">
         ${TILE({ icon: "database", big: "300 sites", lbl: "of PIP’s own sales data behind every score", d: 700, row: true })}
         ${TILE({ icon: "clock", big: "1 day", lbl: "to a proposal with the share in dollars", step: 1, d: 300, row: true })}
         ${TILE({ icon: "refresh-cw", big: "2×", lbl: "PIP’s income must cover the rent twice", step: 2, d: 300, row: true })}
@@ -129,7 +129,7 @@
       <div class="e-lead center" data-a="up" data-d="200">Landlords give the space; advertisers pay for it, because the AI<br>proves who stood there and what they did next.</div>
       <div class="analogy">
         <div class="card" data-a="left" data-d="400">
-          <h3 class="alt" style="color:#1B7F8C">Google</h3>
+          <h3 class="alt"><img class="brand-logo" src="assets/img/logo-google.svg" alt="Google"></h3>
           <p>Free for the people searching.<br>Advertisers pay anyway.</p>
           <div class="hr"></div>
           <p>Why? Google reaches people who are looking…<br>…and <b style="color:var(--teal)">proves</b> what happened next.</p>
@@ -244,7 +244,7 @@
       <div class="e-lead center" data-a="up" data-d="200">Suppliers consign the stock and PIP’s 670 machines have no shopkeeper;<br>the AI shows each supplier where its product sells, before it ships.</div>
       <div class="analogy">
         <div class="card" data-a="left" data-d="350">
-          <h3 class="alt" style="color:#A8770A">Amazon</h3>
+          <h3 class="alt"><img class="brand-logo" src="assets/img/logo-amazon.svg" alt="Amazon"></h3>
           <div class="hr"></div>
           <p>No shopkeeper. A model forecasts what each warehouse sells. Why? It puts stock where it sells… and reorders before it runs out.</p>
         </div>

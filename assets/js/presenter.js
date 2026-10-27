@@ -44,22 +44,20 @@
 
   // ---------- notes ----------
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  // the spoken script comes from content/script.js (shared with /notes); per-slide CUE text from the slide itself
+  const scriptFor = (i) => (window.SCRIPT || [])[i];
   function renderNotes() {
-    const sd = D.slides[st.i];
+    const sd = D.slides[st.i], sc = scriptFor(st.i);
     let html = "";
-    if (sd.notes) {
-      let say = sd.notes, cue = "";
-      const ci = say.indexOf("CUE:");
-      if (ci > -1) { cue = say.slice(ci + 4).trim(); say = say.slice(0, ci).trim(); }
+    if (sc) {
       let k = 0;
-      say = esc(say)
-        .replace(/SAY:/, '<span class="lbl">SAY</span>')
+      const say = esc(sc.say)
         .replace(/\{\{(.+?)\}\}/g, '<span class="dir">$1</span>')
         .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
         .replace(/ \/ /g, ' <span class="pause">/</span> ')
-        .replace(/\[CLICK\]/g, () => { k++; return `<span class="click${k <= st.step ? " done" : ""}">CLICK ${k}</span>`; });
-      html = `<div class="say">${say}</div>`;
-      if (cue) html += `<div class="cue"><span class="lbl">CUE</span>${esc(cue)}</div>`;
+        .replace(/\[&gt;\]/g, () => { k++; return `<span class="click${k <= st.step ? " done" : ""}">CLICK ${k}</span>`; });
+      html = `<div class="say">${esc(sc.sp)} · ${esc(sc.at)}. <span class="lbl">SAY</span> ${say}</div>`;
+      if (sd.cue) html += `<div class="cue"><span class="lbl">CUE</span>${esc(sd.cue)}</div>`;
     } else {
       html = `<div class="none">No speaker notes in the PPTX for this slide. Key points on the slide:</div><ul>${(sd.points || []).map((p) => `<li>${esc(p)}</li>`).join("")}</ul>`;
     }
@@ -71,7 +69,8 @@
     const sd = D.slides[st.i];
     $("#cur-title").textContent = `${st.i + 1}. ${sd.short || sd.title}`;
     const spk = $("#cur-spk");
-    spk.hidden = !sd.speaker; spk.textContent = sd.speaker ? sd.speaker.toUpperCase() + (sd.budget ? ` · ${sd.budget}s` : "") : "";
+    const who = (scriptFor(st.i) || {}).sp || sd.speaker;
+    spk.hidden = !who; spk.textContent = who ? who.toUpperCase() + (sd.budget ? ` · ${sd.budget}s` : "") : "";
     $("#next-title").textContent = st.i < N - 1 ? `${st.i + 2}. ${D.slides[st.i + 1].short || D.slides[st.i + 1].title}` : "End of deck";
     $("#count").textContent = `${st.i + 1} / ${N}`;
     $("#steps").innerHTML = sd.max ? `<span style="font-size:12px;opacity:.7;margin-right:4px">BUILDS</span>` + Array.from({ length: sd.max }, (_, k) => `<i class="${k < st.step ? "on" : ""}"></i>`).join("") : "";

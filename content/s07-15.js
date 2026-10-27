@@ -13,7 +13,7 @@
     id: "landlord-intro", section: "landlord", cls: "bg-paper sec-landlord s7", short: "Landlord Engine: Build like Airbnb",
     title: "Landlord Engine: Build like Airbnb",
     speaker: "Rizwan", budget: 40,
-    notes: "Rizwan · 2:30–3:00. SAY: {{Airbnb card is already on screen. Click first, then speak.}} Airbnb owns no rooms. Yet hosts list anyway. / Why? Because Airbnb brings the guests — and shows each host what their room earns. [CLICK] Pink in Public is built the same way: landlords give the space, co-owners fund the machines, PIP brings the shoppers. But today a new site comes by **referral and chance**, signing takes **six to eight weeks**, and **17%** of our sites are poor sites, flagged for possible relocation. [CLICK] We fix that with two words. **Match.** / And **prove.** [CLICK] {{“Prove” lands one second after “Match”.}} CUE: the Airbnb card is on screen when the slide opens. Click 1: the Pink in Public card, then the three ‘today’ chips follow on their own. Click 2: ‘Match.’ appears; ‘Prove.’ follows one second later — say ‘And prove’ as it lands. Pause after ‘Why?’ and after ‘Match.’ Next slide: Match.",
+    cue: "the Airbnb card is on screen when the slide opens. Click 1: the Pink in Public card, then the three ‘today’ chips follow on their own. Click 2: ‘Match.’ appears; ‘Prove.’ follows one second later — say ‘And prove’ as it lands. Pause after ‘Why?’ and after ‘Match.’ Next slide: Match.",
     html: `
       ${HEAD("Landlord Engine · Rizwan", 7, `Landlord Engine: <span class="hl">Build like Airbnb</span>`)}
       <div class="e-lead" data-a="up" data-d="200">Landlords give the space, co-owners the machines;<br>the AI shows what each site earns.</div>
@@ -58,7 +58,7 @@
     id: "landlord-match", section: "landlord", cls: "bg-paper sec-landlord s8", short: "Landlord Engine: MATCH",
     title: "Landlord Engine: MATCH",
     speaker: "Rizwan", budget: 40,
-    notes: "Rizwan · 3:00–3:30. SAY: Before a landlord signs anything, the AI scores the address — from what our **300 sites** already sell, plus open data: residents within 400 metres, offices, MRT traffic, and who else sells nearby. [CLICK] One day later: a two-page proposal with the landlord’s 10%, **in dollars**. [CLICK] And one rule: if the machine cannot pay the rent **twice over**, we do not sign. [CLICK] One bad lease in five — avoided. [CLICK] CUE: ‘Score’, the 300-sites tile and the score bars build by themselves when the slide opens. Click 1: ‘Propose’ with the proposal strip and the 1-day tile. Click 2: ‘One rule’ and the 2× tile. Click 3: the ‘1 in 5’ tile — the punchline, click as you say it. Next slide: Prove.",
+    cue: "‘Score’, the 300-sites tile and the score bars build by themselves when the slide opens. Click 1: ‘Propose’ with the proposal strip and the 1-day tile. Click 2: ‘One rule’ and the 2× tile. Click 3: the ‘1 in 5’ tile — the punchline, click as you say it. Next slide: Prove.",
     html: `
       ${HEAD("Landlord Engine · Rizwan", 8, `Landlord Engine: <span class="hl">MATCH</span>`)}
       <div class="lead lead-abs" data-a="up" data-d="200">Before a landlord signs, the AI scores the address and prices the deal within a day.</div>
@@ -90,7 +90,7 @@
     id: "landlord-prove", section: "landlord", cls: "bg-paper sec-landlord s9", short: "Landlord Engine: PROVE",
     title: "Landlord Engine: PROVE",
     speaker: "Rizwan", budget: 40,
-    notes: "Rizwan · 3:30–4:00. SAY: After signing, every landlord gets a monthly scorecard: what the lobby sold, who bought, and their 10%, paid. [CLICK] Every machine gets a decision — fix first, move second — and a person signs every move: **at most 2%** of the fleet a year, against 17% today. [CLICK] Co-owners see the real income of every machine they funded. [CLICK] We start with **20 pilot sites**. Good sites say yes in three to four weeks — / not eight. Sanesh: the screens. {{Say “not eight” as the tile lands. Pass the clicker.}} CUE: ‘Scorecard’ and its first three rows build by themselves. Click 1: ‘Keep-or-move’, the KEEP decision row and the ≤2% tile. Click 2: ‘Co-owner portal’ and the 2-years tile. Click 3: the 20-sites tile, then the 6–8 → 3–4 tile lands a second later — say ‘not eight’ as it does. Hand over: ‘Sanesh, the screens.’",
+    cue: "‘Scorecard’ and its first three rows build by themselves. Click 1: ‘Keep-or-move’, the KEEP decision row and the ≤2% tile. Click 2: ‘Co-owner portal’ and the 2-years tile. Click 3: the 20-sites tile, then the 6–8 → 3–4 tile lands a second later — say ‘not eight’ as it does. Hand over: ‘Sanesh, the screens.’",
     html: `
       ${HEAD("Landlord Engine · Rizwan", 9, `Landlord Engine: <span class="hl">PROVE</span>`)}
       <div class="lead lead-abs" style="width:800px" data-a="up" data-d="200">After signing, every site shows what it earned; good sites say yes in 3–4 weeks.</div>
@@ -123,7 +123,7 @@
     id: "advertiser-intro", section: "advertiser", cls: "bg-paper sec-advertiser s10", short: "Advertiser Engine: Funded like Google",
     title: "Advertiser Engine: Funded like Google",
     speaker: "Sanesh",
-    notes: "Sanesh · 4:00–4:30. SAY: {{Slides animate on their own: one click per slide.}} Landlords give PIP the space. Advertisers pay for it. / Google is free for the people searching, yet advertisers pay — because Google reaches people who are looking, and **proves** what happened next. PIP is the same: free for the shopper, paid for by brands on **500 screens** — 70% of our revenue. But today we sell those screens with a pitch. Only **60%** are sold, a screen earns S$210 of the S$300 promised, and **half the brands never come back**. Our fix: Match, and Prove. [CLICK]",
+    cue: "",
     html: `
       ${HEAD("Advertiser Engine · Sanesh", 10, `Advertiser Engine: <span class="hl">Funded like Google</span>`)}
       <div class="e-lead center" data-a="up" data-d="200">Landlords give the space; advertisers pay for it, because the AI<br>proves who stood there and what they did next.</div>
@@ -169,7 +169,7 @@
     id: "advertiser-match", section: "advertiser", cls: "bg-paper sec-advertiser s11", short: "Advertiser Engine: MATCH",
     title: "Advertiser Engine: MATCH",
     speaker: "Sanesh",
-    notes: "Sanesh · 4:30–5:00. SAY: Match happens before a brand books. The AI scores every screen from what its shoppers actually buy, **by the hour** — 50,000 purchases a month. A sports-drink brand gets the screens that sell the most drinks after 6 pm, near gyms and offices. It books from a catalogue with an instant quote. A proposal drops from **four hours to fifteen minutes**; one salesperson handles **150** accounts, not 60; and screen-time sold rises from 60% to **70% by 2028**. [CLICK]",
+    cue: "",
     html: `
       ${HEAD("Advertiser Engine · Sanesh", 11, `Advertiser Engine: <span class="hl">MATCH</span>`)}
       <div class="lead lead-abs" style="width:1060px" data-a="up" data-d="200">Before a brand books, the AI picks the buildings that hold its customers and the hour they pass.</div>
@@ -204,7 +204,7 @@
     id: "advertiser-prove", section: "advertiser", cls: "bg-paper sec-advertiser s12", short: "Advertiser Engine: PROVE",
     title: "Advertiser Engine: PROVE",
     speaker: "Sanesh",
-    notes: "Sanesh · 5:00–5:30. SAY: Prove happens after the ad plays. Because the screen sits on a till, every purchase is a real person at that screen, at that minute. / **No lobby panel can count that. Our till can.** Then the response: a scan, a coupon, a sale — and sales compared with twin screens that did not show the ad. Brands that see proof come back: repeat buyers rise from 50% to **65%**, and coverage of the co-owner promise from 0.70 to **0.88** by 2028. Kartik: what goes on the shelf. {{Pass the clicker.}}",
+    cue: "",
     html: `
       ${HEAD("Advertiser Engine · Sanesh", 12, `Advertiser Engine: <span class="hl">PROVE</span>`)}
       <div class="lead lead-abs" data-a="up" data-d="200">After the ad plays, the till proves who stood there and what they did next.</div>
@@ -238,7 +238,7 @@
     id: "supplier-intro", section: "supplier", cls: "bg-paper sec-supplier s13", short: "Supplier Engine: Run like Amazon",
     title: "Supplier Engine: Run like Amazon",
     speaker: "Kartik", budget: 40,
-    notes: "Kartik · 5:30–6:00. SAY: {{Amazon card is already on screen. Click first, then speak.}} Amazon has no shopkeeper. A model forecasts what each warehouse sells, places the stock, and reorders before it runs out. [CLICK] Pink in Public has no shopkeeper either: **670 machines**, and suppliers consign the stock — they own it until it sells. But today a supplier ships **on a guess**: 27 suppliers against 100, the same 25 products everywhere, and a refill takes three days. [CLICK] We fix that with two words. **Match.** / And **plan.** [CLICK] CUE: the Amazon card is on screen when the slide opens. Click 1: the Pink in Public card, then the three 'today' chips follow on their own. Click 2: 'Match.' appears; 'Plan.' follows one second later — say 'And plan' as it lands. Pause after 'guess' and after 'Match.' Next slide: Match.",
+    cue: "the Amazon card is on screen when the slide opens. Click 1: the Pink in Public card, then the three 'today' chips follow on their own. Click 2: 'Match.' appears; 'Plan.' follows one second later — say 'And plan' as it lands. Pause after 'guess' and after 'Match.' Next slide: Match.",
     html: `
       ${HEAD("Supplier Engine · Kartik", 13, `Supplier Engine: <span class="hl">Run like Amazon</span>`)}
       <div class="e-lead center" data-a="up" data-d="200">Suppliers consign the stock and PIP’s 670 machines have no shopkeeper;<br>the AI shows each supplier where its product sells, before it ships.</div>
@@ -287,7 +287,7 @@
     id: "supplier-match", section: "supplier", cls: "bg-paper sec-supplier s14", short: "Supplier Engine: MATCH",
     title: "Supplier Engine: MATCH",
     speaker: "Kartik", budget: 40,
-    notes: "Kartik · 6:00–6:30. SAY: Before a supplier ships a single unit, the AI reads **50,000 purchases a month** and ranks who to approach. [CLICK] Then it places the product: machines that behave alike are twins, so a protein bar goes to **20 office towers at 3 pm** — not condominiums — with 1,840 units expected. [CLICK] We test it: a four-week Launchpad, 20 machines, **S$1,500**. [CLICK] One gate: expand only if those machines run **5% ahead** of their twins. / Real sales decide, not a pitch. [CLICK] CUE: 'Rank', the 50,000 tile and the fit bars build by themselves when the slide opens. Click 1: 'Place' with the forecast headline and the 20-machines tile. Click 2: 'Test' and the S$1,500 tile. Click 3: the +5% tile — the gate, click as you say it. Next slide: Plan.",
+    cue: "'Rank', the 50,000 tile and the fit bars build by themselves when the slide opens. Click 1: 'Place' with the forecast headline and the 20-machines tile. Click 2: 'Test' and the S$1,500 tile. Click 3: the +5% tile — the gate, click as you say it. Next slide: Plan.",
     html: `
       ${HEAD("Supplier Engine · Kartik", 14, `Supplier Engine: <span class="hl">MATCH</span>`)}
       <div class="e-lead center" style="top:170px;font-size:30px" data-a="up" data-d="200">Before a supplier ships a single unit, the AI names the 20 machines where<br>its product will sell and the units to expect in four weeks.</div>
@@ -321,7 +321,7 @@
     id: "supplier-plan", section: "supplier", cls: "bg-paper sec-supplier s15", short: "Supplier Engine: PLAN",
     title: "Supplier Engine: PLAN",
     speaker: "Kartik", budget: 40,
-    notes: "Kartik · 6:30–7:00. SAY: Then we keep the shelf full. One forecast per product per machine sets the facings and the trips. [CLICK] The model calls the refill **before** the shelf empties: three days becomes under one. [CLICK] And PIP’s share is set per machine — lower to prove a new product, higher for a prime facing. That is **Lim, Wang and Wu’s** consignment contract, run on 670 machines. [CLICK] Suppliers grow from 27 to 66 by 2028 and 110 by 2031, each selling **12% more**. / Josephine: what it is worth. {{Look at Prof Lim on “Lim, Wang and Wu”. Pass the clicker.}} CUE: 'Facings' and the scorecard's first two rows build by themselves. Click 1: 'Refill before the stock-out', the refills row and the 3 days → <1 tile. Click 2: 'Share per machine', the payout row and the −18% tile. Click 3: the 27→66→110 tile, then the +12% tile lands a second later — say '12% more' as it does. Say 'Lim, Wang and Wu' once. Hand over: 'Josephine, what it is worth.'",
+    cue: "'Facings' and the scorecard's first two rows build by themselves. Click 1: 'Refill before the stock-out', the refills row and the 3 days → <1 tile. Click 2: 'Share per machine', the payout row and the −18% tile. Click 3: the 27→66→110 tile, then the +12% tile lands a second later — say '12% more' as it does. Say 'Lim, Wang and Wu' once. Hand over: 'Josephine, what it is worth.'",
     html: `
       ${HEAD("Supplier Engine · Kartik", 15, `Supplier Engine: <span class="hl">PLAN</span>`)}
       <div class="e-lead center" style="top:168px;font-size:30px" data-a="up" data-d="200">After signing, every shelf is refilled before it empties and every slot<br>earns its share; suppliers grow 27 → 66 → 110.</div>

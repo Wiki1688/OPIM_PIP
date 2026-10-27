@@ -260,7 +260,7 @@
     title: "PIP AI Growth Engine – An AI Innovation to Boost PIP Revenue, Enhance Service level & Reduce Costs!",
     speaker: "Wee Khee",
     notes: "Wee Khee · 8:52–8:58. SAY: And that brain is Chapter 3 — analytics and AI — joining every topic of this course. [CLICK]",
-    points: ["Ch. 3 · Session 3 “One Brain” Analytics & AI sits at the centre of every course topic.", "Service level: coverage 0.70 → 1.17. Revenue +S$4.5M (2031 impact). Cost −18% (restock & supply-chain optimisation)."],
+    points: ["Ch. 3 · Session 3 “One Brain” Analytics & AI sits at the centre of every course topic.", "Service level: coverage 0.70 → 1.17 (a screen earns S$210 → S$351 against the S$300 promised to co-owners). Revenue +S$4.5M (2031 impact). Cost −18% (restock & supply-chain optimisation)."],
     html: `
       <header class="head" style="text-align:center">
         <h1 class="title xs" data-a="up" data-d="0" style="margin-top:0">PIP AI Growth Engine – <span class="hl">An AI Innovation</span> to<br>Boost PIP Revenue, Enhance Service level &amp; Reduce Costs!</h1>
@@ -280,7 +280,7 @@
       <div class="side" style="left:24px;top:200px;width:250px" data-a="up" data-d="1400">
         <div class="arrow" style="color:#D9A230">${I("arrow-up")}</div>
         <b style="color:#B27A00">SERVICE LEVEL</b><div class="sv" style="color:#B27A00">0.70 → 1.17</div>
-        <p>Coverage: From risk of stockout to consistent availability.</p>
+        <p>Coverage: a screen earns S$210 → S$351 against the S$300 promised to co-owners.</p>
         <div style="font-size:64px;color:#D9A230;margin-top:8px">${I("shield-check")}</div>
       </div>
       <div class="card q21" data-a="up" data-d="1600">“PIP’s machine is proving the ad, proving the purchase, and proving the lobby — all at once.”<span class="by">— From the PIP AI Growth Engine Narrative</span></div>

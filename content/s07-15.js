@@ -19,7 +19,7 @@
       <div class="e-lead" data-a="up" data-d="200">Landlords give the space, co-owners the machines;<br>the AI shows what each site earns.</div>
       <div class="analogy">
         <div class="card" data-a="left" data-d="350">
-          <h3 class="alt"><img class="brand-logo" src="assets/img/logo-airbnb.svg" alt="Airbnb"></h3>
+          <h3 class="alt"><img class="brand-logo" src="assets/img/logo-airbnb.svg" alt="Airbnb" width="154" height="48"></h3>
           <p>Owns no rooms.<br>Hosts list anyway.</p>
           <div class="hr"></div>
           <p>Why? Airbnb brings the guests…<br>…and shows each host what their room earns.</p>
@@ -129,7 +129,7 @@
       <div class="e-lead center" data-a="up" data-d="200">Landlords give the space; advertisers pay for it, because the AI<br>proves who stood there and what they did next.</div>
       <div class="analogy">
         <div class="card" data-a="left" data-d="400">
-          <h3 class="alt"><img class="brand-logo" src="assets/img/logo-google.svg" alt="Google"></h3>
+          <h3 class="alt"><img class="brand-logo" src="assets/img/logo-google.svg" alt="Google" width="142" height="48"></h3>
           <p>Free for the people searching.<br>Advertisers pay anyway.</p>
           <div class="hr"></div>
           <p>Why? Google reaches people who are looking…<br>…and <b style="color:var(--teal)">proves</b> what happened next.</p>
@@ -244,7 +244,7 @@
       <div class="e-lead center" data-a="up" data-d="200">Suppliers consign the stock and PIP’s 670 machines have no shopkeeper;<br>the AI shows each supplier where its product sells, before it ships.</div>
       <div class="analogy">
         <div class="card" data-a="left" data-d="350">
-          <h3 class="alt"><img class="brand-logo" src="assets/img/logo-amazon.svg" alt="Amazon"></h3>
+          <h3 class="alt"><img class="brand-logo" src="assets/img/logo-amazon.svg" alt="Amazon" width="159" height="48"></h3>
           <div class="hr"></div>
           <p>No shopkeeper. A model forecasts what each warehouse sells. Why? It puts stock where it sells… and reorders before it runs out.</p>
         </div>

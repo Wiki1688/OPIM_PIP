@@ -212,21 +212,21 @@
       ${HEAD("Our proposal", 6, `Our Proposal: <span class="hl">The PIP AI Growth Engine</span>`)}
       <div class="s6-lead" data-a="up" data-d="200">The PIP AI Growth Engine answers with <b>“Proof from the Till:”</b></div>
       <div class="card prom airbnb" data-a="up" data-d="400">
-        <div class="brand"><img class="brand-logo" src="assets/img/logo-airbnb.svg" alt="Airbnb"></div>
+        <div class="brand"><img class="brand-logo" src="assets/img/logo-airbnb.svg" alt="Airbnb" width="128" height="40"></div>
         <h3>Built like Airbnb</h3><div class="pw">the promise to landlords and co-owners.</div>
         ${pr("house", "THEY GIVE", "the space, and S$13,000 a machine for two years.")}
         ${pr("cpu", "THE AI DOES", "scores the address from PIP’s 300 sites and public data; shows the 10% share in dollars before signing; a monthly scorecard after.")}
         ${pr("users", "WHY THEY SAY YES", "a site in three to four weeks, not six to eight; co-owners see the real income of their machines.")}
       </div>
       <div class="card prom google" data-a="up" data-d="600">
-        <div class="brand"><img class="brand-logo" src="assets/img/logo-google.svg" alt="Google"></div>
+        <div class="brand"><img class="brand-logo" src="assets/img/logo-google.svg" alt="Google" width="118" height="40"></div>
         <h3>Funded like Google</h3><div class="pw">the promise to advertisers.</div>
         ${pr("dollar-sign", "THEY GIVE", "S$350 a screen-month")}
         ${pr("map-pin", "THE AI DOES", "finds the buildings that hold the brand’s customers, plays the ad at the hour they pass, proves a verified presence and measures the response.")}
         ${pr("chart-column", "WHY THEY SAY YES", "the report a brand gets from Google and no lobby panel gives today; screen-time sold 60% → 80% by 2031.")}
       </div>
       <div class="card prom amazon" data-a="up" data-d="800">
-        <div class="brand"><img class="brand-logo" src="assets/img/logo-amazon.svg" alt="Amazon"></div>
+        <div class="brand"><img class="brand-logo" src="assets/img/logo-amazon.svg" alt="Amazon" width="133" height="40"></div>
         <h3>Run like Amazon</h3><div class="pw">the promise to suppliers</div>
         ${pr("package", "THEY GIVE", "consigned stock and a share of each sale.")}
         ${pr("brain", "THE AI DOES", "learns what sells in each building from 50,000 purchases a month; shows the 20 machines where a product will sell; refills before the shelf is empty; sets a fair share per machine.")}

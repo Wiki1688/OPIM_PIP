@@ -372,6 +372,6 @@
 .qa-foot { position: absolute; left: 0; right: 0; bottom: 40px; text-align: center; color: rgba(255, 255, 255, .85); font-weight: 700; font-size: 28px; letter-spacing: .08em; }
 
 /* ---------- brand logos (slides 6, 7, 10, 13) ---------- */
-.brand-logo { display: block; width: auto; height: 52px; }
-.prom .brand-logo { margin: 0 auto; }
-.analogy h3 .brand-logo { height: 48px; }
+.brand-logo { display: block; width: auto; height: 48px; }
+.prom .brand { height: 44px; display: flex; align-items: center; justify-content: center; }
+.prom .brand-logo { height: 40px; }
